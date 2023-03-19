@@ -1,3 +1,17 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #272829;
+  }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
 #header {
     position: fixed;
     top: 0;
@@ -54,3 +68,35 @@
     width: 100%;
     color: #fff;
 }
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url("https://media.licdn.com/dms/image/C4E03AQE3oZIhjj819A/profile-displayphoto-shrink_400_400/0/1547665082831?e=1684972800&v=beta&t=jAitRk2sWqk2BPQtxIau5L5KXiuB2DTIck9qKgE9zEA") top right no-repeat;
+    background-size:contain;
+    position: relative;
+  }
+
+  #hero h1 {
+    margin: 0;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #239F9F;
+  }
+
+  #hero p {
+    color: #239F9F;
+  }
+
+  #hero .social-links {
+    margin-top: 30px;
+  }
+
+  .social-links a {
+    font-size: 24px;
+    display: inline-block;
+    color: #239F9F;
+    line-height: 1;
+    margin-right: 20px;
+  }
