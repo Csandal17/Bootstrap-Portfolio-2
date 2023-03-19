@@ -23,6 +23,28 @@ h6 {
     overflow-y: auto;
 }
 
+@media (max-width: 991px) {
+    #header {
+      width: 300px;
+      background: #fff;
+      border-right: 1px solid #e6e9ec;
+      left: -300px;
+    }
+  }
+  
+  @media (min-width: 991px) {
+    #main {
+      margin-left: 100px;
+    }
+  }
+
+/*----- Nav Bar -----*/
+
+.nav-menu {
+    padding: 0;
+    display: block;
+  }
+
 .nav-menu * {
     margin: 0;
     padding: 0;
@@ -34,10 +56,11 @@ h6 {
     white-space: nowrap;
 }
 
-.nav-menu a {
+.nav-menu a,
+.nav-menu a:focus {
     display: flex;
     align-items: center;
-    color: #45505b;
+    color: #45BFBF;
     padding: 10px 18px;
     margin-bottom: 8px;
     font-size: 15px;
@@ -47,27 +70,60 @@ h6 {
     width: 100%;
     overflow: hidden;
     transition: 0.3s;
-    text-decoration: none;
 }
 
-.nav-menu a i {
+.nav-menu a i,
+.nav-menu a:focus {
     font-size: 20px;
 }
 
-.nav-menu a span {
+.nav-menu a span,
+.nav-menu a:focus span {
     padding: 0 5px 0 7px;
     color: #A7A29F;
 }
 
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+@media (min-width: 992px) {
+
+    .nav-menu a,
+    .nav-menu a:focus {
+      width: 56px;
+    }
+  
+    .nav-menu a span,
+    .nav-menu a:focus span {
+      display: none;
+      color: #fff;
+    }
+  }
+  
+  .nav-menu a:hover,
+  .nav-menu .active,
+  .nav-menu .active:focus,
+  .nav-menu li:hover>a {
     color: #fff;
     background: #45BFBF;
 }
 
-.nav-menu a:hover, .nav-menu li:hover > a > span {
-    width: 100%;
-    color: #fff;
+.nav-menu a:hover span,
+.nav-menu .active span,
+.nav-menu .active:focus span,
+.nav-menu li:hover>a span {
+  color: #fff;
 }
+
+.nav-menu a:hover,
+.nav-menu li:hover>a {
+  width: 100%;
+  color: #fff;
+}
+
+.nav-menu a:hover span,
+.nav-menu li:hover>a span {
+  display: block;
+}
+
+/*----- Hero -----*/
 
 #hero {
     width: 100%;
@@ -99,4 +155,31 @@ h6 {
     color: #239F9F;
     line-height: 1;
     margin-right: 20px;
+  }
+
+/*----- Footer -----*/
+
+  #footer {
+    background: #f7f8f9;
+    color: #239F9F;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  #footer h3 {
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0 0 15px 0;
+  }
+
+  #footer .copyright {
+    margin: 0 0 5px 0;
+  }
+  
+  #footer .credits {
+    font-size: 13px;
   }
